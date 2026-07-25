@@ -99,6 +99,7 @@ export function generatedImageEchoSources(parts: readonly ToolLike[]): string[] 
     if (!record) {
       continue
     }
+
     // Single image.
     sources.push(...stringFields(record, ECHO_KEYS))
     // Batch images array.
